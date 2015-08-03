@@ -1,0 +1,12 @@
+{
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=tcp:h4r02itw1d.database.windows.net,1433;Database=HostDB;User ID=AsyntecAdmin@h4r02itw1d;Password=Admin2015;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;"
+    }
+  },
+  "EntityFramework": {
+    "HostContext": { 
+        "ConnectionString" : "Data:DefaultConnection:ConnectionString"
+    }
+  }
+}

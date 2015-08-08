@@ -7,9 +7,19 @@ using Host.Models;
 namespace HostMigrations
 {
     [ContextType(typeof(HostContext))]
-    partial class HostContextModelSnapshot : ModelSnapshot
+    partial class v2
     {
-        public override void BuildModel(ModelBuilder builder)
+        public override string Id
+        {
+            get { return "20150808211410_v2"; }
+        }
+
+        public override string ProductVersion
+        {
+            get { return "7.0.0-beta6-13815"; }
+        }
+
+        public override void BuildTargetModel(ModelBuilder builder)
         {
             builder
                 .Annotation("ProductVersion", "7.0.0-beta6-13815")
